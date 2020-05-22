@@ -1,0 +1,1755 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+    
+    
+      
+        <title>Overview - </title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.18ac144a.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.616af814.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/a.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview-of-the-citrix-hypervisor-management-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="" class="md-header-nav__button md-logo" aria-label="">
+      
+  <img src="../media/logo3.jpg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="" class="md-nav__button md-logo" aria-label="">
+      
+  <img src="../media/logo3.jpg" alt="logo">
+
+    </a>
+    
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Overview
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Overview" class="md-nav__link md-nav__link--active">
+      Overview
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#citrix-hypervisor-management-api-deprecation-policy" class="md-nav__link">
+    Citrix Hypervisor Management API Deprecation Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-the-api" class="md-nav__link">
+    Getting Started with the API
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started with the API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-acquiring-a-session-reference" class="md-nav__link">
+    Authentication: acquiring a session reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acquiring-a-list-of-templates-to-base-a-new-vm-installation-on" class="md-nav__link">
+    Acquiring a list of templates to base a new VM installation on
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-vm-based-on-a-template" class="md-nav__link">
+    Installing the VM based on a template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taking-the-vm-through-a-startsuspendresumestop-cycle" class="md-nav__link">
+    Taking the VM through a start/suspend/resume/stop cycle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-out" class="md-nav__link">
+    Logging out
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-and-start-example-summary" class="md-nav__link">
+    Install and start example: summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-model-overview" class="md-nav__link">
+    Object Model Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Object Model Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vm" class="md-nav__link">
+    VM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host" class="md-nav__link">
+    Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vdi" class="md-nav__link">
+    VDI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sr" class="md-nav__link">
+    SR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vbd" class="md-nav__link">
+    VBD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vif" class="md-nav__link">
+    VIF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pif" class="md-nav__link">
+    PIF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pbd" class="md-nav__link">
+    PBD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-vifs-and-vbds" class="md-nav__link">
+    Working with VIFs and VBDs
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with VIFs and VBDs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-disks-and-attaching-them-to-vms" class="md-nav__link">
+    Creating disks and attaching them to VMs
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating disks and attaching them to VMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-blank-disk-image" class="md-nav__link">
+    Creating a new blank disk image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaching-the-disk-image-to-a-vm" class="md-nav__link">
+    Attaching the disk image to a VM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hotplugging-the-vbd" class="md-nav__link">
+    Hotplugging the VBD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-attaching-network-devices-to-vms" class="md-nav__link">
+    Creating and attaching Network Devices to VMs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host-configuration-for-networking-and-storage" class="md-nav__link">
+    Host configuration for networking and storage
+  </a>
+  
+    <nav class="md-nav" aria-label="Host configuration for networking and storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host-storage-configuration-pbds" class="md-nav__link">
+    Host storage configuration: PBDs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host-networking-configuration-pifs" class="md-nav__link">
+    Host networking configuration: PIFs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporting-and-importing-vms" class="md-nav__link">
+    Exporting and Importing VMs
+  </a>
+  
+    <nav class="md-nav" aria-label="Exporting and Importing VMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xen-virtual-appliance-xva-vm-import-format" class="md-nav__link">
+    Xen Virtual Appliance (XVA) VM Import Format
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpc-notes" class="md-nav__link">
+    RPC notes
+  </a>
+  
+    <nav class="md-nav" aria-label="RPC notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datetimes" class="md-nav__link">
+    Datetimes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-look-next" class="md-nav__link">
+    Where to look next
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../using/" title="Using" class="md-nav__link">
+      Using
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../using-http/" title="Using HTTP" class="md-nav__link">
+      Using HTTP
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../xs-api-extensions/" title="Citrix Hypervisor Management API Extensions" class="md-nav__link">
+      Citrix Hypervisor Management API Extensions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../xc-api-extensions/" title="XenCenter API Extension" class="md-nav__link">
+      XenCenter API Extension
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#citrix-hypervisor-management-api-deprecation-policy" class="md-nav__link">
+    Citrix Hypervisor Management API Deprecation Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-the-api" class="md-nav__link">
+    Getting Started with the API
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started with the API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-acquiring-a-session-reference" class="md-nav__link">
+    Authentication: acquiring a session reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acquiring-a-list-of-templates-to-base-a-new-vm-installation-on" class="md-nav__link">
+    Acquiring a list of templates to base a new VM installation on
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-vm-based-on-a-template" class="md-nav__link">
+    Installing the VM based on a template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taking-the-vm-through-a-startsuspendresumestop-cycle" class="md-nav__link">
+    Taking the VM through a start/suspend/resume/stop cycle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-out" class="md-nav__link">
+    Logging out
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-and-start-example-summary" class="md-nav__link">
+    Install and start example: summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-model-overview" class="md-nav__link">
+    Object Model Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Object Model Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vm" class="md-nav__link">
+    VM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host" class="md-nav__link">
+    Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vdi" class="md-nav__link">
+    VDI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sr" class="md-nav__link">
+    SR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vbd" class="md-nav__link">
+    VBD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vif" class="md-nav__link">
+    VIF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pif" class="md-nav__link">
+    PIF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pbd" class="md-nav__link">
+    PBD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-vifs-and-vbds" class="md-nav__link">
+    Working with VIFs and VBDs
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with VIFs and VBDs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-disks-and-attaching-them-to-vms" class="md-nav__link">
+    Creating disks and attaching them to VMs
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating disks and attaching them to VMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-blank-disk-image" class="md-nav__link">
+    Creating a new blank disk image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaching-the-disk-image-to-a-vm" class="md-nav__link">
+    Attaching the disk image to a VM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hotplugging-the-vbd" class="md-nav__link">
+    Hotplugging the VBD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-attaching-network-devices-to-vms" class="md-nav__link">
+    Creating and attaching Network Devices to VMs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host-configuration-for-networking-and-storage" class="md-nav__link">
+    Host configuration for networking and storage
+  </a>
+  
+    <nav class="md-nav" aria-label="Host configuration for networking and storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host-storage-configuration-pbds" class="md-nav__link">
+    Host storage configuration: PBDs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#host-networking-configuration-pifs" class="md-nav__link">
+    Host networking configuration: PIFs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporting-and-importing-vms" class="md-nav__link">
+    Exporting and Importing VMs
+  </a>
+  
+    <nav class="md-nav" aria-label="Exporting and Importing VMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xen-virtual-appliance-xva-vm-import-format" class="md-nav__link">
+    Xen Virtual Appliance (XVA) VM Import Format
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpc-notes" class="md-nav__link">
+    RPC notes
+  </a>
+  
+    <nav class="md-nav" aria-label="RPC notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datetimes" class="md-nav__link">
+    Datetimes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-look-next" class="md-nav__link">
+    Where to look next
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="overview-of-the-citrix-hypervisor-management-api">Overview of the Citrix Hypervisor Management API</h1>
+<p>This chapter introduces the Citrix Hypervisor Management API (after here referred to
+as the "API") and its associated object model. The API has the following
+key features:</p>
+<ul>
+<li>
+<p><strong>Management of all aspects of the Citrix Hypervisor server.</strong></p>
+<p>The API allows you to manage VMs, storage, networking, host
+configuration, and pools. Performance and status metrics can also be
+queried from the API.</p>
+</li>
+<li>
+<p><strong>Persistent Object Model.</strong></p>
+<p>The results of all side-effecting operations (for example: object creation,
+deletion, and parameter changes) are persisted in a server-side
+database that is managed by Citrix Hypervisor.</p>
+</li>
+<li>
+<p><strong>An event mechanism.</strong></p>
+<p>Through the API, clients can register to be notified when persistent
+(server-side) objects are changed. This enables applications to
+track datamodel changes performed by concurrently
+executing clients.</p>
+</li>
+<li>
+<p><strong>Synchronous and asynchronous invocation.</strong></p>
+<p>All API calls can be invoked synchronously (that is, block until
+completion). Any API call that might be long-running can also be
+invoked <em>asynchronously</em>. Asynchronous calls return immediately with
+a reference to a <em>task</em> object. This task object can be queried
+(through the API) for progress and status information. When an
+asynchronously invoked operation completes, the result (or error
+code) is available from the task object.</p>
+</li>
+<li>
+<p><strong>Remotable and Cross-Platform.</strong></p>
+<p>The client issuing the API calls doesn't have to be resident on the
+host being managed. The client also does not have to be connected to the host
+over ssh to execute the API. API calls use the
+RPC protocol to transmit requests and responses over the
+network.</p>
+</li>
+<li>
+<p><strong>Secure and Authenticated Access.</strong></p>
+<p>The RPC API backend executing on the host accepts secure socket
+connections. This allows a client to execute the APIs over the https
+protocol. Further, all the API calls execute in the context of a
+login session generated through user name and password validation at
+the server. This provides secure and authenticated access to the
+Citrix Hypervisor installation.</p>
+</li>
+</ul>
+<h2 id="citrix-hypervisor-management-api-deprecation-policy">Citrix Hypervisor Management API Deprecation Policy</h2>
+<p>Items that will be removed in a future release are marked as deprecated.</p>
+<p>By default, Citrix continues to support deprecated APIs and product functionality up to and including the next Citrix Hypervisor Long Term Service Release (LTSR). Deprecated items are usually removed in a Current Release following that LTSR.</p>
+<p>In exceptional cases, an item might be deprecated and removed before the next LTSR. For example, a change might be required to improve security. If this happens, Citrix makes customers aware of the change to the API or the product functionality.</p>
+<p>This deprecation policy applies only to APIs and functionality that are documented at the following locations:</p>
+<ul>
+<li><a href="http://docs.citrix.com/en-us/citrix-hypervisor.html">Citrix Product Documentation</a></li>
+<li><a href="http://developer-docs.citrix.com">Citrix Developer Documentation</a></li>
+</ul>
+<h2 id="getting-started-with-the-api">Getting Started with the API</h2>
+<p>Let's start our tour of the API by describing the calls required to
+create a VM on a Citrix Hypervisor installation, and take it through a
+start/suspend/resume/stop cycle. This section does not reference code
+in any specific language. At this stage we just describe the informal
+sequence of RPC invocations that do our "install and start"
+task.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>We recommend strongly against using the <code>VM.create</code> call, which might be
+removed or changed in a future version of the API. Read on to learn
+other ways to make a new VM.</p>
+</blockquote>
+<h3 id="authentication-acquiring-a-session-reference">Authentication: acquiring a session reference</h3>
+<p>The first step is to call <code>Session.login_with_password(username,  password, client_API_version, originator)</code>. The API is session based, so before you can make other calls you must authenticate with the server. Assuming the user name and password are authenticated correctly, the result of this
+call is a <em>session reference</em>. Subsequent API calls take the session
+reference as a parameter. In this way, we ensure that only API users who
+are suitably authorized can perform operations on a Citrix Hypervisor
+installation. You can continue to use the same session for any number of
+API calls. When you have finished the session,
+recommends that you call <code>Session.logout(session)</code> to clean up: see
+later.</p>
+<h3 id="acquiring-a-list-of-templates-to-base-a-new-vm-installation-on">Acquiring a list of templates to base a new VM installation on</h3>
+<p>The next step is to query the list of "templates" on the host. Templates
+are specially marked VM objects that specify suitable default parameters
+for various supported guest types. (If you want to see a quick
+enumeration of the templates on a Citrix Hypervisor installation for
+yourself, you can execute the <code>xe template-list</code> CLI command.) To
+get a list of templates from the API, find the VM objects on
+the server that have their <code>is_a_template</code> field set to true. One way to
+do find these objects is by calling <code>VM.get_all_records(session)</code> where the session parameter is the reference we acquired
+from our <code>Session.login_with_password</code> call earlier. This call queries the server, returning a
+snapshot (taken at the time of the call) containing all the VM object
+references and their field values.</p>
+<p>(Remember that at this stage we are not concerned with how the returned object references and field values can
+be manipulated in any particular client language: that detail is dealt
+with by each language-specific SDK and described concretely in
+the following chapter. For now, assume the existence
+of an abstract mechanism for reading and manipulating objects and field
+values returned by API calls.)</p>
+<p>Now we have a snapshot of the VM objects' field values in the
+memory of our client application, iterate through them and
+find the VMs that have their <code>is_a_template</code> value set to <code>true</code>. At this
+stage, let's assume that our example application further iterates through
+the template objects and remembers the reference corresponding to the
+one that has its "<code>name_label</code>" set to "Debian Etch 4.0" (one of the
+default Linux templates supplied with Citrix Hypervisor).</p>
+<h3 id="installing-the-vm-based-on-a-template">Installing the VM based on a template</h3>
+<p>Continuing through our example, we must now install a new VM based on
+the template we selected. The installation process requires two API calls:</p>
+<ul>
+<li>
+<p>First we must now invoke the API call
+    <code>VM.clone(session, t_ref, "my first VM")</code>. This call tells the server to clone the VM object
+    referenced by <code>t_ref</code> to make a new VM object. The return
+    value of this call is the VM reference corresponding to the
+    newly created VM. Let's call this <code>new_vm_ref</code>.</p>
+</li>
+<li>
+<p>At this stage, the object referred to by <code>new_vm_ref</code> is still a
+    template (like the VM object referred to by <code>t_ref</code>, from which
+    it was cloned). To make <code>new_vm_ref</code> into a VM object, we must
+    call <code>VM.provision(session, new_vm_ref)</code>. When this call returns the
+    <code>new_vm_ref</code> object will have had its <code>is_a_template</code> field set to
+    false, indicating that <code>new_vm_ref</code> now refers to a regular VM ready
+    for starting.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>The provision operation can take a few minutes, as it is as during
+this call that the template's disk images are created. For
+the Debian template, the newly created disks are also at this stage
+populated with a Debian root filesystem.</p>
+</blockquote>
+<h3 id="taking-the-vm-through-a-startsuspendresumestop-cycle">Taking the VM through a start/suspend/resume/stop cycle</h3>
+<p>Now we have an object reference representing our newly installed VM, it
+is trivial to take it through a few lifecycle operations:</p>
+<ul>
+<li>
+<p>To start our VM, we can call <code>VM.start(session, new_vm_ref)</code></p>
+</li>
+<li>
+<p>After it's running, we can suspend it by calling
+    <code>VM.suspend(session, new_vm_ref)</code>,</p>
+</li>
+<li>
+<p>We can resume it by calling <code>VM.resume(session, new_vm_ref)</code>.</p>
+</li>
+<li>
+<p>We can call <code>VM.shutdown(session, new_vm_ref)</code> to shut down the VM
+    cleanly.</p>
+</li>
+</ul>
+<h3 id="logging-out">Logging out</h3>
+<p>When an application is finished interacting with a Citrix Hypervisor server,
+it is good practice to call <code>Session.logout(session)</code>. This call invalidates
+the session reference (so it cannot be used in subsequent API calls) and
+deallocates server-side memory used to store the session object.</p>
+<p>Although inactive sessions eventually time out, the server has a
+hardcoded limit of 500 concurrent sessions for each <code>username</code> or
+<code>originator</code>. After this limit has been reached, fresh logins evict
+the session objects that have been used least recently. The session
+references of these evicted session objects become invalid. For successful
+interoperability with other applications, concurrently accessing the
+server, the best policy is:</p>
+<ul>
+<li>
+<p>Choose a string that identifies your application and its version.</p>
+</li>
+<li>
+<p>Create a single session at start-of-day, using that identifying
+    string for the <code>originator</code> parameter to <code>Session.login_with_password</code>.</p>
+</li>
+<li>
+<p>Use this session throughout the application and then explicitly logout when possible.</p>
+<p>Note: Sessions can be used across multiple separate client-server <em>network
+connections</em>.</p>
+</li>
+</ul>
+<p>If a poorly written client leaks sessions or otherwise exceeds the
+limit, then as long as the client uses an appropriate <code>originator</code>
+argument, it is easily identifiable from the Citrix Hypervisor logs.
+Citrix Hypervisor destroys the longest-idle sessions of the rogue
+client only. This behavior might cause problems for that client but not for other
+clients. If the misbehaving client doesn't specify an <code>originator</code>, it is harder to identify and causes
+the premature destruction of other client sessions that also didn't
+specify an <code>originator</code></p>
+<h3 id="install-and-start-example-summary">Install and start example: summary</h3>
+<p>We have seen how the API can be used to install a VM from a
+Citrix Hypervisor template and perform various lifecycle operations on
+it. Note that the number of calls we had to make to
+affect these operations was small:</p>
+<ul>
+<li>
+<p>One call to acquire a session: <code>Session.login_with_password()</code></p>
+</li>
+<li>
+<p>One call to query the VM (and template) objects present on the
+    Citrix Hypervisor installation: <code>VM.get_all_records()</code>. Recall that we
+    used the information returned from this call to select a suitable
+    template to install from.</p>
+</li>
+<li>
+<p>Two calls to install a VM from our chosen template: <code>VM.clone()</code>,
+    followed by <code>VM.provision()</code>.</p>
+</li>
+<li>
+<p>One call to start the resultant VM: <code>VM.start()</code> (and similarly
+    other single calls to suspend, resume, and shut down accordingly)</p>
+</li>
+<li>
+<p>And then one call to log out <code>Session.logout()</code></p>
+</li>
+</ul>
+<p>Although the API as a whole is complex and fully featured, common tasks (such as VM lifecycle operations) are straightforward, requiring only a few simple API calls.
+Keep this fact in mind as you study the next section which might, on first reading, appear a little daunting!</p>
+<h2 id="object-model-overview">Object Model Overview</h2>
+<p>This section gives a high-level overview of the object model of the API.
+For a more detailed description of the parameters and methods of each class, see the Citrix Hypervisor Management API reference.</p>
+<p>We start by giving a brief outline of some of the core classes that make up the API.
+(Don't worry if these definitions seem abstract in their initial presentation. The textual description in the following sections, and the code-sample walk through in the next section make these concepts concrete.)</p>
+<hr />
+<h3 id="vm">VM</h3>
+<p>A VM object represents a particular virtual machine instance on a Citrix Hypervisor server or Resource Pool. Example
+methods include <code>start</code>, <code>suspend</code>, <code>pool_migrate</code>; example parameters include <code>power_state</code>, <code>memory_static_max</code>, and <code>name_label</code>. (In the previous section we saw how the VM class is used to represent both templates and regular VMs)</p>
+<h3 id="host">Host</h3>
+<p>A host object represents a physical host in a Citrix Hypervisor pool. Example methods include <code>reboot</code> and <code>shutdown</code>. Example parameters include <code>software_version</code>, <code>hostname</code>, and [IP]<code>address</code>.</p>
+<h3 id="vdi">VDI</h3>
+<p>A VDI object represents a <em>Virtual Disk Image</em>. Virtual Disk Images can be attached to VMs. A
+block device appears inside the VM through which the bits encapsulated by the attached Virtual Disk Image can be read
+and written. Example methods of the VDI class include <code>resize</code> and <code>clone</code>. Example fields include
+<code>virtual_size</code> and <code>sharable</code>.
+When we called <code>VM.provision</code> on the VM template in our previous example, some VDI objects were automatically created to
+represent the newly created disks. These VDIs were attached to the VM object.</p>
+<h3 id="sr">SR</h3>
+<p>An SR (<em>Storage Repository</em>) aggregates a collection of VDIs, It encapsulates the properties of physical
+storage on which the VDIs' bits reside. Example parameters include:</p>
+<ul>
+<li><code>type</code> which determines the storage-specific driver a Citrix Hypervisor installation uses to read/write the SR's VDIs</li>
+<li><code>physical_utilisation</code></li>
+</ul>
+<p>Example methods include</p>
+<ul>
+<li><code>scan</code> which invokes the storage-specific driver to acquire a list of the VDIs contained with the SR and the properties of these VDIs</li>
+<li><code>create</code> which initializes a block of physical storage so it is ready to store VDIs</li>
+</ul>
+<h3 id="network">Network</h3>
+<p>A network object represents a layer-2 network that exists in the environment in which the Citrix Hypervisor server
+instance lives. Since Citrix Hypervisor does not manage networks directly, network is a lightweight class that models
+ physical and virtual network topology. VM and Host objects that are <em>attached</em> to a particular
+Network object can send network packets to each other. The objects are attached through VIF and PIF instances. For more information, see the following section.</p>
+<hr />
+<p>If you are finding this enumeration of classes rather terse, you can skip to the code walk-throughs of the next
+chapter. There are plenty of useful applications that can be written
+using only a subset of the classes already described. If you want
+to continue this description of classes in the abstract, read on.</p>
+<p>In addition to the classes listed in the previous section, there are four more that act as
+<em>connectors</em>. These <em>connectors</em> specify relationships between VMs and Hosts and
+Storage and Networks.
+The first two of these classes that we consider, <em>VBD</em> and <em>VIF</em>, determine how VMs are attached to virtual
+disks and network objects respectively.</p>
+<hr />
+<h3 id="vbd">VBD</h3>
+<p>A VBD (<em>Virtual Block Device</em>) object represents an
+attachment between a VM and a VDI. When a VM is booted,
+its VBD objects are queried to determine which disk
+images (VDIs) to attach.
+Example methods of the VBD class include:</p>
+<ul>
+<li><code>plug</code> which <em>hot plugs</em> a disk device into a running VM, making the specified VDI accessible therein</li>
+<li><code>unplug</code> which <em>hot unplugs</em> a disk device from a running guest</li>
+</ul>
+<p>Example fields include:</p>
+<ul>
+<li><code>device</code> which determines the device name inside the guest under which the specified VDI is made accessible</li>
+</ul>
+<h3 id="vif">VIF</h3>
+<p>A VIF (<em>Virtual Network Interface</em>) object represents
+an attachment between a VM and a Network object. When
+a VM is booted, its VIF objects are queried to
+determine which network devices to create.
+Example methods of the VIF class include:</p>
+<ul>
+<li><code>plug</code> which <em>hot plugs</em> a network device into a running VM</li>
+<li><code>unplug</code> which <em>hot unplugs</em> a network device from a running guest</li>
+</ul>
+<hr />
+<p>The second set of "connector classes" that we consider determine
+how Hosts are attached to Networks and Storage.</p>
+<hr />
+<h3 id="pif">PIF</h3>
+<p>A PIF (<em>Physical Interface</em>) object represents an attachment
+between a Host and a Network object. If a host is connected to a
+Network over a PIF, packets from the specified host can be
+transmitted/received by the corresponding host.
+Example fields of the PIF class include:</p>
+<ul>
+<li><code>device</code> which specifies the device name to which the PIF corresponds. For example, <em>eth0</em></li>
+<li><code>MAC</code> which specifies the MAC address of the underlying NIC that a PIF represents</li>
+</ul>
+<p>PIFs abstract both physical interfaces and VLANs (the latter distinguished by the existence of a positive
+integer in the "VLAN" field).</p>
+<h3 id="pbd">PBD</h3>
+<p>A PBD (<em>Physical Block Device</em>) object represents an attachment
+between a Host and an SR (Storage Repository) object. Fields
+include:</p>
+<ul>
+<li><code>currently-attached</code> which specifies whether the chunk of storage represented by the specified SR object is available to the host</li>
+<li><code>device_config</code> which specifies storage-driver specific parameters that determine how the low-level storage devices are configured on the specified host.
+    For example, when an SR rendered on an NFS filer, device_config can specify the host-name of the filer and the path on the filer in which the SR files live.</li>
+</ul>
+<hr />
+<p><img alt="Common API Classes" src="../media/dia_class_overview.png" /></p>
+<p>This figure presents a graphical overview of
+the API classes involved in managing VMs, Hosts, Storage, and Networking.
+From this diagram, the symmetry between storage and network
+configuration, and also the symmetry between virtual machine and host
+configuration is plain to see.</p>
+<h2 id="working-with-vifs-and-vbds">Working with VIFs and VBDs</h2>
+<p>In this section we walk through a few more complex scenarios. These scenarios describe
+how various tasks involving virtual storage and network devices can be done using the API.</p>
+<h3 id="creating-disks-and-attaching-them-to-vms">Creating disks and attaching them to VMs</h3>
+<p>Let's start by considering how to make a new blank disk image and attach
+it to a running VM. We assume that we already have a
+running VM, and we know its corresponding API object reference. For example, we
+might have created this VM using the procedure described in the previous
+section and had the server return its reference to us.
+We also assume that we have authenticated with the Citrix Hypervisor installation
+and have a corresponding <code>session reference</code>. Indeed in the rest of this
+chapter, for the sake of brevity, does not mention sessions
+altogether.</p>
+<h4 id="creating-a-new-blank-disk-image">Creating a new blank disk image</h4>
+<p>First, instantiate the disk image on physical storage by calling <code>VDI.create()</code>.
+The <code>VDI.create</code> call takes a number of parameters, including:</p>
+<ul>
+<li>
+<p><code>name_label</code> and <code>name_description</code>: a human-readable
+    name/description for the disk (for example, for convenient display in the UI). These fields can be left blank if desired.</p>
+</li>
+<li>
+<p><code>SR</code>: the object reference of the Storage Repository representing
+    the physical storage in which the VDI's bits are placed.</p>
+</li>
+<li>
+<p><code>read_only</code>: setting this field to true indicates that the VDI can
+    <em>only</em> be attached to VMs in a read-only fashion. (Attempting to
+    attach a VDI with its <code>read_only</code> field set to true in a read/write fashion results
+    in error.)</p>
+</li>
+</ul>
+<p>Invoking the <code>VDI.create</code> call causes the Citrix Hypervisor installation to
+create a blank disk image on physical storage, create an associated VDI
+object (the datamodel instance that refers to the disk image on physical
+storage) and return a reference to this newly created VDI object.</p>
+<p>The way in which the disk image is represented on physical storage
+depends on the type of the SR in which the created VDI resides. For
+example, if the SR is of type "lvm" then the new disk image will be
+rendered as an LVM volume; if the SR is of type "nfs" then the new disk
+image will be a sparse VHD file created on an NFS filer. (You can query
+the SR type through the API using the <code>SR.get_type()</code> call.)</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Some SR types might round up the <code>virtual-size</code> value to make it
+divisible by a configured block size.</p>
+</blockquote>
+<h4 id="attaching-the-disk-image-to-a-vm">Attaching the disk image to a VM</h4>
+<p>So far we have a running VM (that we assumed the existence of at the
+start of this example) and a fresh VDI that we just created. Right now,
+these are both independent objects that exist on the Citrix Hypervisor
+Host, but there is nothing linking them together. So our next step is to
+create such a link, associating the VDI with our VM.</p>
+<p>The attachment is formed by creating a new "connector" object called a
+VBD (<em>Virtual Block Device</em>). To create our VBD we invoke the
+<code>VBD.create()</code> call. The <code>VBD.create()</code> call takes a number of parameters including:</p>
+<ul>
+<li>
+<p><code>VM</code> - the object reference of the VM to which the VDI is to be
+    attached</p>
+</li>
+<li>
+<p><code>VDI</code> - the object reference of the VDI that is to be attached</p>
+</li>
+<li>
+<p><code>mode</code> - specifies whether the VDI is to be attached in a read-only
+    or a read-write fashion</p>
+</li>
+<li>
+<p><code>userdevice</code> - specifies the block device inside the guest through
+    which applications running inside the VM will be able to read/write
+    the VDI's bits.</p>
+</li>
+<li>
+<p><code>type</code> - specifies whether the VDI should be presented inside the VM
+    as a regular disk or as a CD. (Note that this particular field has
+    more meaning for Windows VMs than it does for Linux VMs, but we will
+    not explore this level of detail in this chapter.)</p>
+</li>
+</ul>
+<p>Invoking <code>VBD.create</code> makes a VBD object on the Citrix Hypervisor
+installation and returns its object reference. However, this call in
+itself does not have any side-effects on the running VM (that is, if you
+go and look inside the running VM you will see that the block device has
+not been created). The fact that the VBD object exists but that the
+block device in the guest is not active, is reflected by the fact that
+the VBD object's <code>currently_attached</code> field is set to false.</p>
+<p><img alt="A VM object with 2 associated VDIs" src="../media/dia_vm_sr.png" /></p>
+<p>For expository purposes, this figure presents
+a graphical example that shows the relationship between VMs, VBDs, VDIs
+and SRs. In this instance a VM object has 2 attached VDIs: there are two
+VBD objects that form the connections between the VM object and its
+VDIs; and the VDIs reside within the same SR.</p>
+<h4 id="hotplugging-the-vbd">Hotplugging the VBD</h4>
+<p>If we rebooted the VM at this stage then, after rebooting, the block
+device corresponding to the VBD would appear: on boot, Citrix Hypervisor
+queries all VBDs of a VM and actively attaches each of the corresponding
+VDIs.</p>
+<p>Rebooting the VM is all very well, but recall that we wanted to attach a
+newly created blank disk to a <em>running</em> VM. This can be achieved by
+invoking the <code>plug</code> method on the newly created VBD object. When the
+<code>plug</code> call returns successfully, the block device to which the VBD
+relates will have appeared inside the running VM -- i.e. from the
+perspective of the running VM, the guest operating system is led to
+believe that a new disk device has just been <em>hot plugged</em>. Mirroring
+this fact in the managed world of the API, the <code>currently_attached</code> field of the VBD is set to true.</p>
+<p>Unsurprisingly, the VBD <code>plug</code> method has a dual called "<code>unplug</code>".
+Invoking the <code>unplug</code> method on a VBD object causes the associated block
+device to be <em>hot unplugged</em> from a running VM, setting the
+<code>currently_attached</code> field of the VBD object to false accordingly.</p>
+<h3 id="creating-and-attaching-network-devices-to-vms">Creating and attaching Network Devices to VMs</h3>
+<p>The API calls involved in configuring virtual network interfaces in VMs
+are similar in many respects to the calls involved in configuring
+virtual disk devices. For this reason we will not run through a full
+example of how one can create network interfaces using the API
+object-model; instead we will use this section just to outline briefly
+the symmetry between virtual <em>networking device</em> and virtual <em>storage
+device</em> configuration.</p>
+<p>The networking analogue of the VBD class is the VIF class. Just as a VBD
+is the API representation of a block device inside a VM, a VIF (<em>Virtual
+network InterFace</em>) is the API representation of a network device inside
+a VM. Whereas VBDs associate VM objects with VDI objects, VIFs associate
+VM objects with Network objects. Just like VBDs, VIFs have a
+<code>currently_attached</code> field that determines whether or not the network
+device (inside the guest) associated with the VIF is currently active or
+not. And as we saw with VBDs, at VM boot-time the VIFs of the VM are
+queried and a corresponding network device for each created inside the
+booting VM. Similarly, VIFs also have <code>plug</code> and <code>unplug</code> methods for hot plugging/unplugging network devices in/out of
+running VMs.</p>
+<h3 id="host-configuration-for-networking-and-storage">Host configuration for networking and storage</h3>
+<p>We have seen that the VBD and VIF classes are used to manage
+configuration of block devices and network devices (respectively) inside
+VMs. To manage host configuration of storage and networking there are
+two analogous classes: PBD (<em>Physical Block Device</em>) and PIF (<em>Physical
+[network] InterFace</em>).</p>
+<h4 id="host-storage-configuration-pbds">Host storage configuration: PBDs</h4>
+<p>Let us start by considering the PBD class. A <code>PBD_create()</code> call takes a
+number of parameters including:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host</td>
+<td>physical machine on which the PBD is available</td>
+</tr>
+<tr>
+<td>SR</td>
+<td>the Storage Repository that the PBD connects to</td>
+</tr>
+<tr>
+<td>device_config</td>
+<td>a string-to-string map that is provided to the host's SR-backend-driver, containing the low-level parameters required to configure the physical storage device(s) on which the SR is to be realized. The specific contents of the <code>device_config</code> field depend on the type of the SR to which the PBD is connected. (Executing <code>xe sm-list</code> will show a list of possible SR types; the <em>configuration</em> field in this enumeration specifies the <code>device_config</code> parameters that each SR type expects.)</td>
+</tr>
+</tbody>
+</table>
+<p>For example, imagine we have an SR object <em>s</em> of type "nfs"
+(representing a directory on an NFS filer within which VDIs are stored
+as VHD files); and let's say that we want a host, <em>h</em>, to be able to
+access <em>s</em>. In this case we invoke <code>PBD.create()</code> specifying host <em>h</em>, SR <em>s</em>, and a value for the
+<em>device_config</em> parameter that is the following map:</p>
+<p><code>("server", "my_nfs_server.example.com"), ("serverpath", "/scratch/mysrs/sr1")</code></p>
+<p>This tells the Citrix Hypervisor server that SR <em>s</em> is accessible on host
+<em>h</em>, and further that to access SR <em>s</em>, the host needs to mount the
+directory <code>/scratch/mysrs/sr1</code> on the NFS server named <code>my_nfs_server.example.com</code>.</p>
+<p>Like VBD objects, PBD objects also have a field called <code>currently_attached</code>. Storage repositories can be attached
+and detached from a given host by invoking <code>PBD.plug</code> and <code>PBD.unplug</code>
+methods respectively.</p>
+<h4 id="host-networking-configuration-pifs">Host networking configuration: PIFs</h4>
+<p>Host network configuration is specified by virtue of PIF objects. If a
+PIF object connects a network object, <em>n</em>, to a host object <em>h</em>, then
+the network corresponding to <em>n</em> is bridged onto a physical interface
+(or a physical interface plus a VLAN tag) specified by the fields of the
+PIF object.</p>
+<p>For example, imagine a PIF object exists connecting host <em>h</em> to a
+network <em>n</em>, and that <code>device</code> field of the PIF object is set to <code>eth0</code>.
+This means that all packets on network <em>n</em> are bridged to the NIC in the
+host corresponding to host network device <code>eth0</code>.</p>
+<h2 id="exporting-and-importing-vms">Exporting and Importing VMs</h2>
+<p>VMs can be exported to a file and later imported to any Citrix Hypervisor
+server. The export protocol is a simple HTTP(S) GET, which should be
+performed on the master if the VM is on a pool member. Authorization is
+either standard HTTP basic authentication, or if a session has already
+been obtained, this can be used. The VM to export is specified either by
+UUID or by reference. To keep track of the export, a task can be created
+and passed in using its reference. The request might result in a
+redirect if the VM's disks are only accessible on a pool member.</p>
+<p>The following arguments are passed on the command line:</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>session_id</td>
+<td>the reference of the session being used to authenticate; required only when not using HTTP basic authentication</td>
+</tr>
+<tr>
+<td>task_id</td>
+<td>the reference of the task object with which to keep track of the operation; optional, required only if you have created a task object to keep track of the export</td>
+</tr>
+<tr>
+<td>ref</td>
+<td>the reference of the VM; required only if not using the UUID</td>
+</tr>
+<tr>
+<td>uuid</td>
+<td>the UUID of the VM; required only if not using the reference</td>
+</tr>
+</tbody>
+</table>
+<p>For example, using the Linux command line tool cURL:</p>
+<pre><code>curl http://root:foo@myhypervisor1/export?uuid=&lt;vm_uuid&gt; -o &lt;exportfile&gt;
+</code></pre>
+<p>This command will export the specified VM to the file <code>exportfile</code>.</p>
+<p>To export just the metadata, use the URI <code>http://server/export_metadata</code>.</p>
+<p>The import protocol is similar, using HTTP(S) PUT. The <code>session_id</code> and
+<code>task_id</code> arguments are as for the export. The <code>ref</code> and <code>uuid</code> are not used; a new reference and uuid will be generated for the
+VM. There are some additional parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>restore</td>
+<td>if <em>true</em>, the import is treated as replacing the original VM - the implication of this currently is that the MAC addresses on the VIFs are exactly as the export was, which will lead to conflicts if the original VM is still being run.</td>
+</tr>
+<tr>
+<td>force</td>
+<td>if <em>true</em>, any checksum failures will be ignored (the default is to destroy the VM if a checksum error is detected)</td>
+</tr>
+<tr>
+<td>sr_id</td>
+<td>the reference of an SR into which the VM should be imported. The default behavior is to import into the <em>Pool.default_SR</em>.</td>
+</tr>
+</tbody>
+</table>
+<p>For example, again using cURL:</p>
+<pre><code>curl -T &lt;exportfile&gt; http://root:foo@myhypervisor2/import
+</code></pre>
+<p>This command will import the VM to the default SR on the server.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Note that if no default SR has been set, and no sr_uuid is specified,
+the error message "DEFAULT_SR_NOT_FOUND" is returned.</p>
+</blockquote>
+<p>Another example:</p>
+<pre><code>curl -T &lt;exportfile&gt; http://root:foo@myhypervisor2/import?sr_id=&lt;opaque_ref_of_sr&gt;
+</code></pre>
+<p>This command will import the VM to the specified SR on the server.</p>
+<p>To import just the metadata, use the URI <code>http://server/import_metadata</code></p>
+<h3 id="xen-virtual-appliance-xva-vm-import-format">Xen Virtual Appliance (XVA) VM Import Format</h3>
+<p>Citrix Hypervisor supports a human-readable legacy VM input format called
+XVA. This section describes the syntax and structure of XVA.</p>
+<p>An XVA consists of a directory containing XML metadata and a set of disk
+images. A VM represented by an XVA is not intended to be directly
+executable. Data within an XVA package is compressed and intended for
+either archiving on permanent storage or for being transmitted to a VM
+server - such as a Citrix Hypervisor server - where it can be decompressed
+and executed.</p>
+<p>XVA is a hypervisor-neutral packaging format; it should be possible to
+create simple tools to instantiate an XVA VM on any other platform. XVA
+does not specify any particular runtime format; for example disks may be
+instantiated as file images, LVM volumes, QCoW images, VMDK or VHD
+images. An XVA VM may be instantiated any number of times, each
+instantiation may have a different runtime format.</p>
+<p>XVA does not:</p>
+<ul>
+<li>
+<p>specify any particular serialization or transport format</p>
+</li>
+<li>
+<p>provide any mechanism for customizing VMs (or templates) on install</p>
+</li>
+<li>
+<p>address how a VM may be upgraded post-install</p>
+</li>
+<li>
+<p>define how multiple VMs, acting as an appliance, may communicate</p>
+</li>
+</ul>
+<p>These issues are all addressed by the related Open Virtual Appliance
+specification.</p>
+<p>An XVA is a directory containing, at a minimum, a file called <code>ova.xml</code>.
+This file describes the VM contained within the XVA and is described in
+Section 3.2. Disks are stored within sub-directories and are referenced
+from the ova.xml. The format of disk data is described in a later section.</p>
+<p>The following terms are used in the rest of this article:</p>
+<ul>
+<li>
+<p>HVM: a mode in which unmodified OS kernels run with the help of
+    virtualization support in the hardware.</p>
+</li>
+<li>
+<p>PV: a mode in which specially modified "paravirtualized" kernels run
+    explicitly on top of a hypervisor without requiring hardware support
+    for virtualization.</p>
+</li>
+</ul>
+<p>The "ova.xml" file contains the following elements:</p>
+<pre><code>&lt;appliance version="0.1"&gt;
+</code></pre>
+<p>The number in the attribute "version" indicates the version of this
+specification to which the XVA is constructed; in this case version 0.1.
+Inside the &lt;appliance&gt; there is exactly one &lt;vm&gt;: (in the
+OVA specification, multiple &lt;vm&gt;s are permitted)</p>
+<pre><code>&lt;vm name="name"&gt;
+</code></pre>
+<p>Each &lt;vm&gt; element describes one VM. The "name" attribute is for
+future internal use only and must be unique within the ova.xml file. The
+"name" attribute is permitted to be any valid UTF-8 string. Inside each
+&lt;vm&gt; tag are the following compulsory elements:</p>
+<pre><code>&lt;label&gt;... text ... &lt;/label&gt;
+</code></pre>
+<p>A short name for the VM to be displayed in a UI.</p>
+<pre><code>&lt;shortdesc&gt; ... description ... &lt;/shortdesc&gt;
+</code></pre>
+<p>A description for the VM to be displayed in the UI. Note that for both
+&lt;label&gt; and &lt;shortdesc&gt; contents, leading and trailing
+whitespace will be ignored.</p>
+<pre><code>&lt;config mem_set="268435456" vcpus="1"/&gt;
+</code></pre>
+<p>The <code>&lt;config&gt;</code> element has attributes which describe the amount of
+memory in bytes (mem_set) and number of CPUs (VCPUs) the VM should
+have.</p>
+<p>Each <code>&lt;vm&gt;</code> has zero or more &lt;vbd&gt; elements representing block
+devices which look like the following:</p>
+<pre><code>&lt;vbd device="sda" function="root" mode="w" vdi="vdi_sda"/&gt;
+</code></pre>
+<p>The attributes have the following meanings:</p>
+<p><strong>device</strong></p>
+<ul>
+<li>name of the physical device to expose to the VM. For linux guests we
+    use "sd[a-z]" and for windows guests we use "hd[a-d]".</li>
+</ul>
+<p><strong>function</strong></p>
+<ul>
+<li>if marked as "root", this disk will be used to boot the guest. (NB
+    this does not imply the existence of the Linux root i.e. /
+    filesystem) Only one device should be marked as "root". See Section
+    3.4 describing VM booting. Any other string is ignored.</li>
+</ul>
+<p><strong>mode</strong></p>
+<ul>
+<li>either "w" or "ro" if the device is to be read/write or read-only</li>
+</ul>
+<p><strong>vdi</strong></p>
+<ul>
+<li>the name of the disk image (represented by a &lt;vdi&gt; element) to
+    which this block device is connected</li>
+</ul>
+<p>Each &lt;vm&gt; may have an optional &lt;hacks&gt; section like the
+following: &lt;hacks is_hvm="false"
+kernel_boot_cmdline="root=/dev/sda1 ro"/&gt; The &lt;hacks&gt; element
+is present in the XVA files generated by Citrix Hypervisor but will be
+removed in future. The attribute "is_hvm" is either "true" or "false",
+depending on whether the VM should be booted in HVM or not. The
+"kernel_boot_cmdline" contains additional kernel commandline arguments
+when booting a guest using pygrub.</p>
+<p>In addition to a &lt;vm&gt; element, the &lt;appliance&gt; will contain
+zero or more &lt;vdi&gt; elements like the following:</p>
+<pre><code>&lt;vdi name="vdi_sda" size="5368709120" source="file://sda" type="dir-gzipped-chunks"&gt;
+</code></pre>
+<p>Each &lt;vdi&gt; corresponds to a disk image. The attributes have the
+following meanings:</p>
+<ul>
+<li>
+<p>name: name of the VDI, referenced by the vdi attribute of
+    &lt;vbd&gt; elements. Any valid UTF-8 string is permitted.</p>
+</li>
+<li>
+<p>size: size of the required image in bytes</p>
+</li>
+<li>
+<p>source: a URI describing where to find the data for the image, only
+    file:// URIs are currently permitted and must describe paths
+    relative to the directory containing the ova.xml</p>
+</li>
+<li>
+<p>type: describes the format of the disk data</p>
+</li>
+</ul>
+<p>A single disk image encoding is specified in which has type
+"dir-gzipped-chunks": Each image is represented by a directory
+containing a sequence of files as follows:</p>
+<pre><code>-rw-r--r-- 1 dscott xendev 458286013 Sep 18 09:51 chunk000000000.gz
+-rw-r--r-- 1 dscott xendev 422271283 Sep 18 09:52 chunk000000001.gz
+-rw-r--r-- 1 dscott xendev 395914244 Sep 18 09:53 chunk000000002.gz
+-rw-r--r-- 1 dscott xendev 9452401 Sep 18 09:53 chunk000000003.gz
+-rw-r--r-- 1 dscott xendev 1096066 Sep 18 09:53 chunk000000004.gz
+-rw-r--r-- 1 dscott xendev 971976 Sep 18 09:53 chunk000000005.gz
+-rw-r--r-- 1 dscott xendev 971976 Sep 18 09:53 chunk000000006.gz
+-rw-r--r-- 1 dscott xendev 971976 Sep 18 09:53 chunk000000007.gz
+-rw-r--r-- 1 dscott xendev 573930 Sep 18 09:53 chunk000000008.gz
+</code></pre>
+<p>Each file (named "chunk-XXXXXXXXX.gz") is a gzipped file containing
+exactly 1e9 bytes (1GB, not 1GiB) of raw block data. The small size was
+chosen to be safely under the maximum file size limits of several
+filesystems. If the files are gunzipped and then concatenated together,
+the original image is recovered.</p>
+<p>Citrix Hypervisor provides two mechanisms for booting a VM: (i) using a
+paravirtualized kernel extracted through pygrub; and (ii) using HVM. The
+current implementation uses the "is_hvm" flag within the &lt;hacks&gt;
+section to decide which mechanism to use.</p>
+<p>This rest of this section describes a very simple Debian VM packaged as
+an XVA. The VM has two disks, one with size 5120MiB and used for the
+root filesystem and used to boot the guest using pygrub and the other of
+size 512MiB which is used for swap. The VM has 512MiB of memory and uses
+one virtual CPU.</p>
+<p>At the topmost level the simple Debian VM is represented by a single
+directory:</p>
+<pre><code class="bash">    $ ls -l
+    total 4
+    drwxr-xr-x 3 dscott xendev 4096 Oct 24 09:42 very simple Debian VM
+</code></pre>
+
+<p>Inside the main XVA directory are two sub-directories - one per disk -
+and the single file: ova.xml:</p>
+<pre><code class="bash">    $ ls -l very\ simple\ Debian\ VM/
+    total 8
+    -rw-r--r-- 1 dscott xendev 1016 Oct 24 09:42 ova.xml
+    drwxr-xr-x 2 dscott xendev 4096 Oct 24 09:42 sda
+    drwxr-xr-x 2 dscott xendev 4096 Oct 24 09:53 sdb
+</code></pre>
+
+<p>Inside each disk sub-directory are a set of files, each file contains
+1GB of raw disk block data compressed using gzip:</p>
+<pre><code class="bash">    $ ls -l very\ simple\ Debian\ VM/sda/
+    total 2053480
+    -rw-r--r-- 1 dscott xendev 202121645 Oct 24 09:43 chunk-000000000.gz
+    -rw-r--r-- 1 dscott xendev 332739042 Oct 24 09:45 chunk-000000001.gz
+    -rw-r--r-- 1 dscott xendev 401299288 Oct 24 09:48 chunk-000000002.gz
+    -rw-r--r-- 1 dscott xendev 389585534 Oct 24 09:50 chunk-000000003.gz
+    -rw-r--r-- 1 dscott xendev 624567877 Oct 24 09:53 chunk-000000004.gz
+    -rw-r--r-- 1 dscott xendev 150351797 Oct 24 09:54 chunk-000000005.gz
+</code></pre>
+
+<pre><code class="bash">    $ ls -l very\ simple\ Debian\ VM/sdb
+    total 516
+    -rw-r--r-- 1 dscott xendev 521937 Oct 24 09:54 chunk-000000000.gz
+</code></pre>
+
+<p>The example simple Debian VM would have an XVA file like the following:</p>
+<pre><code class="xml">    &lt;?xml version=&quot;1.0&quot; ?&gt;
+    &lt;appliance version=&quot;0.1&quot;&gt;
+      &lt;vm name=&quot;vm&quot;&gt;
+        &lt;label&gt;very simple Debian VM&lt;/label&gt;
+        &lt;shortdesc&gt;the description field can contain any valid UTF-8&lt;/shortdesc&gt;
+        &lt;config mem_set=&quot;536870912&quot; vcpus=&quot;1&quot;/&gt;
+        &lt;hacks is_hvm=&quot;false&quot; kernel_boot_cmdline=&quot;root=/dev/sda1 ro &quot;&gt;
+        &lt;!--This section is temporary and will be ignored in future. Attribute
+        is_hvm (&quot;true&quot; or &quot;false&quot;) indicates whether the VM will be booted in HVM mode. In
+        future this will be autodetected. Attribute kernel_boot_cmdline contains the kernel
+        commandline for the case where a proper grub menu.lst is not present. In future
+        booting shall only use pygrub.--&gt;
+        &lt;/hacks&gt;
+        &lt;vbd device=&quot;sda&quot; function=&quot;root&quot; mode=&quot;w&quot; vdi=&quot;vdi_sda&quot;/&gt;
+        &lt;vbd device=&quot;sdb&quot; function=&quot;swap&quot; mode=&quot;w&quot; vdi=&quot;vdi_sdb&quot;/&gt;
+      &lt;/vm&gt;
+      &lt;vdi name=&quot;vdi_sda&quot; size=&quot;5368709120&quot; source=&quot;file://sda&quot; type=&quot;dir-gzippedchunks&quot;/&gt;
+      &lt;vdi name=&quot;vdi_sdb&quot; size=&quot;536870912&quot; source=&quot;file://sdb&quot; type=&quot;dir-gzippedchunks&quot;/&gt;
+    &lt;/appliance&gt;
+</code></pre>
+
+<h2 id="rpc-notes">RPC notes</h2>
+<h3 id="datetimes">Datetimes</h3>
+<p>The API deviates from the RPC specification in handling of datetimes. The API appends a "Z" to the end of datetime strings, which is meant to indicate that the time is expressed in UTC.</p>
+<h2 id="where-to-look-next">Where to look next</h2>
+<p>In this chapter we have presented a brief high-level overview of the API
+and its object-model. The aim here is not to present the detailed
+semantics of the API, but just to provide enough background for you to
+start reading the code samples of the next chapter and to find your way
+around the more detailed Citrix Hypervisor Management API reference.</p>
+<p>There are a number of places you can find more information:</p>
+<ul>
+<li>
+<p>The <a href="https://docs.citrix.com/en-us/citrix-hypervisor/command-line-interface.html">Citrix Hypervisor Product Documentation</a> contains an overview of the
+    <code>xe</code> CLI. Since a good deal of <code>xe</code> commands are a thin veneer over
+    the API, playing with <code>xe</code> is a good way to start finding your way
+    around the API object model described in this chapter.</p>
+</li>
+<li>
+<p>The code samples in the next chapter provide some concrete instances
+    of API coding in a variety of client languages.</p>
+</li>
+<li>
+<p>The Citrix Hypervisor Management API reference provides a more detailed description of the API semantics as well as the wire protocol of the RPC messages.</p>
+</li>
+<li>
+<p>There are a few scripts that use the API in the Citrix Hypervisor server
+    dom0 itself. For example, "/opt/xensource/libexec/shutdown" is a
+    python program that cleanly shuts VMs down. This script is invoked
+    when the host itself is shut down.</p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." title="Introduction" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../getting-started/" title="Getting Started" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Getting Started
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

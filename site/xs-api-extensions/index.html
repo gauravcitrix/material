@@ -1,0 +1,974 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+    
+    
+      
+        <title>Citrix Hypervisor Management API Extensions - </title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.18ac144a.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.616af814.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/a.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#citrix-hypervisor-management-api-extensions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="" class="md-header-nav__button md-logo" aria-label="">
+      
+  <img src="../media/logo3.jpg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Citrix Hypervisor Management API Extensions
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="" class="md-nav__button md-logo" aria-label="">
+      
+  <img src="../media/logo3.jpg" alt="logo">
+
+    </a>
+    
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../using/" title="Using" class="md-nav__link">
+      Using
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../using-http/" title="Using HTTP" class="md-nav__link">
+      Using HTTP
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Citrix Hypervisor Management API Extensions
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Citrix Hypervisor Management API Extensions" class="md-nav__link md-nav__link--active">
+      Citrix Hypervisor Management API Extensions
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vm-console-forwarding" class="md-nav__link">
+    VM console forwarding
+  </a>
+  
+    <nav class="md-nav" aria-label="VM console forwarding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#console-access" class="md-nav__link">
+    Console access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieving-vnc-consoles-using-the-api" class="md-nav__link">
+    Retrieving VNC consoles using the API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-vnc-forwarding-for-linux-vm" class="md-nav__link">
+    Disabling VNC forwarding for Linux VM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paravirtual-linux-installation" class="md-nav__link">
+    Paravirtual Linux installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-xenstore-entries-to-vms" class="md-nav__link">
+    Adding xenstore entries to VMs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-enhancements" class="md-nav__link">
+    Security enhancements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings-for-network-interfaces" class="md-nav__link">
+    Advanced settings for network interfaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced settings for network interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ethtool-settings" class="md-nav__link">
+    ethtool settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-settings" class="md-nav__link">
+    Miscellaneous settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internationalization-for-sr-names" class="md-nav__link">
+    Internationalization for SR names
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hiding-objects-from-xencenter" class="md-nav__link">
+    Hiding objects from XenCenter
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../xc-api-extensions/" title="XenCenter API Extension" class="md-nav__link">
+      XenCenter API Extension
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vm-console-forwarding" class="md-nav__link">
+    VM console forwarding
+  </a>
+  
+    <nav class="md-nav" aria-label="VM console forwarding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#console-access" class="md-nav__link">
+    Console access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieving-vnc-consoles-using-the-api" class="md-nav__link">
+    Retrieving VNC consoles using the API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-vnc-forwarding-for-linux-vm" class="md-nav__link">
+    Disabling VNC forwarding for Linux VM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paravirtual-linux-installation" class="md-nav__link">
+    Paravirtual Linux installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-xenstore-entries-to-vms" class="md-nav__link">
+    Adding xenstore entries to VMs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-enhancements" class="md-nav__link">
+    Security enhancements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings-for-network-interfaces" class="md-nav__link">
+    Advanced settings for network interfaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced settings for network interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ethtool-settings" class="md-nav__link">
+    ethtool settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-settings" class="md-nav__link">
+    Miscellaneous settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internationalization-for-sr-names" class="md-nav__link">
+    Internationalization for SR names
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hiding-objects-from-xencenter" class="md-nav__link">
+    Hiding objects from XenCenter
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="citrix-hypervisor-management-api-extensions">Citrix Hypervisor Management API extensions</h1>
+<p>The Management API is a general and comprehensive interface to managing the
+life-cycles of virtual machines, and offers a lot of flexibility in the
+way that Management API providers may implement specific functionality (for example,
+storage provisioning, or console handling). Citrix Hypervisor has several
+extensions which provide useful functionality used in our own
+XenCenter interface. The workings of these mechanisms are described
+in this chapter.</p>
+<p>Extensions to the Management API are often provided by specifying <code>other-config</code>
+map keys to various objects. The use of this parameter indicates that
+the functionality is supported for that particular release of
+Citrix Hypervisor, but <em>not</em> as a long-term feature. We are constantly
+evaluating promoting functionality into the API, but this requires the
+nature of the interface to be well-understood. Developer feedback as to
+how you are using some of these extensions is always welcome to help us
+make these decisions.</p>
+<h2 id="vm-console-forwarding">VM console forwarding</h2>
+<p>Most Management API graphical interfaces will want to gain access to the VM
+consoles, in order to render them to the user as if they were physical
+machines. There are several types of consoles available, depending on
+the type of guest or if the physical host console is being accessed:</p>
+<h3 id="console-access">Console access</h3>
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Text</th>
+<th>Graphical</th>
+<th>Optimized graphical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No</td>
+<td>VNC, using an API call</td>
+<td>RDP, directly from guest</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>Yes, through VNC and an API call</td>
+<td>No</td>
+<td>VNC, directly from guest</td>
+</tr>
+<tr>
+<td>Physical Host</td>
+<td>Yes, through VNC and an API call</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Hardware-assisted VMs, such as Windows, directly provide a graphical
+console over VNC. There is no text-based console, and guest networking
+is not necessary to use the graphical console. Once guest networking has
+been established, it is more efficient to setup Remote Desktop Access
+and use an RDP client to connect directly (this must be done outside of
+the XenAPI).</p>
+<p>Paravirtual VMs, such as Linux guests, provide a native text console
+directly. Citrix Hypervisor provides a utility (called <code>vncterm</code>) to
+convert this text-based console into a graphical VNC representation.
+Guest networking is not necessary for this console to function. As with
+Windows above, Linux distributions often configure VNC within the guest,
+and directly connect to it over a guest network interface.</p>
+<p>The physical host console is only available as a <code>vt100</code> console, which
+is exposed through the XenAPI as a VNC console by using <code>vncterm</code> in the
+control domain.</p>
+<p>RFB (Remote Framebuffer) is the protocol which underlies VNC, specified
+in <a href="http://www.realvnc.com/docs/rfbproto.pdf">The RFB Protocol</a>.
+Third-party developers are expected to provide their own VNC viewers,
+and many freely available implementations can be adapted for this
+purpose. RFB 3.3 is the minimum version which viewers must support.</p>
+<h3 id="retrieving-vnc-consoles-using-the-api">Retrieving VNC consoles using the API</h3>
+<p>VNC consoles are retrieved using a special URL passed through to the
+host agent. The sequence of API calls is as follows:</p>
+<ol>
+<li>
+<p>Client to Master/443: RPC: <code>Session.login_with_password()</code>.</p>
+</li>
+<li>
+<p>Master/443 to Client: Returns a session reference to be used with
+    subsequent calls.</p>
+</li>
+<li>
+<p>Client to Master/443: RPC: <code>VM.get_by_name_label()</code>.</p>
+</li>
+<li>
+<p>Master/443 to Client: Returns a reference to a particular VM (or the
+    "control domain" if you want to retrieve the physical host console).</p>
+</li>
+<li>
+<p>Client to Master/443: RPC: <code>VM.get_consoles()</code>.</p>
+</li>
+<li>
+<p>Master/443 to Client: Returns a list of console objects associated
+    with the VM.</p>
+</li>
+<li>
+<p>Client to Master/443: RPC: <code>VM.get_location()</code>.</p>
+</li>
+<li>
+<p>Returns a URI describing where the requested console is located. The
+    URIs are of the
+    form: <code>https://192.168.0.1/console?ref=OpaqueRef:c038533a-af99-a0ff-9095-c1159f2dc6a0</code>
+    or <code>https://192.168.0.1/console?uuid=026e34fe-f0f2-20ee-5344-46d1aa922d5b</code></p>
+</li>
+<li>
+<p>Client to 192.168.0.1: HTTP CONNECT "/console?ref=(...)". You will
+    also need to pass in "session_id=<session reference>" as a cookie.</p>
+</li>
+</ol>
+<p>The final HTTP CONNECT is slightly non-standard since the HTTP/1.1 RFC
+specifies that it should only be a host and a port, rather than a URL.
+Once the HTTP connect is complete, the connection can subsequently
+directly be used as a VNC server without any further HTTP protocol
+action.</p>
+<p>This scheme requires direct access from the client to the control
+domain's IP, and will not work correctly if there are Network Address
+Translation (NAT) devices blocking such connectivity. You can use the
+CLI to retrieve the console URI from the client and perform a
+connectivity check.</p>
+<p>Retrieve the VM UUID by running:</p>
+<pre><code class="bash">    xe vm-list params=uuid --minimal name-label=name
+</code></pre>
+
+<p>Retrieve the console information:</p>
+<pre><code class="bash">    xe console-list vm-uuid=uuid
+    uuid ( RO): 714f388b-31ed-67cb-617b-0276e35155ef
+    vm-uuid ( RO): 8acb7723-a5f0-5fc5-cd53-9f1e3a7d3069
+    vm-name-label ( RO): etch
+    protocol ( RO): RFB
+    location ( RO): https://192.168.0.1/console?ref=(...)
+</code></pre>
+
+<p>Use command-line utilities like <code>ping</code> to test connectivity to the IP
+address provided in the <code>location</code> field.</p>
+<h3 id="disabling-vnc-forwarding-for-linux-vm">Disabling VNC forwarding for Linux VM</h3>
+<p>When creating and destroying Linux VMs, the host agent automatically
+manages the <code>vncterm</code> processes which convert the text console into VNC. Advanced
+users who wish to directly access the text console can disable VNC
+forwarding for that VM. The text console can then only be accessed
+directly from the control domain directly, and graphical interfaces such
+as XenCenter will not be able to render a console for that VM.</p>
+<p>Before starting the guest, set the following parameter on the VM record:</p>
+<pre><code>xe vm-param-set uuid=uuid other-config:disable_pv_vnc=1
+</code></pre>
+<p>Start the VM.</p>
+<p>Use the CLI to retrieve the underlying domain ID of the VM with:</p>
+<pre><code>xe vm-list params=dom-id uuid=uuid --minimal
+</code></pre>
+<p>On the host console, connect to the text console directly by:</p>
+<pre><code>/usr/lib/xen/bin/xenconsole domain_id
+</code></pre>
+<p>This configuration is an advanced procedure, and we do not recommend
+that the text console is directly used for heavy I/O operations.
+Instead, connect to the guest over SSH or some other network-based
+connection mechanism.</p>
+<h2 id="paravirtual-linux-installation">Paravirtual Linux installation</h2>
+<p>The installation of paravirtual Linux guests is complicated by the fact
+that a Xen-aware kernel must be booted, rather than simply installing
+the guest using hardware-assistance. This does have the benefit of
+providing near-native installation speed due to the lack of emulation
+overhead. Citrix Hypervisor supports the installation of several different
+Linux distributions, and abstracts this process as much as possible.</p>
+<p>To this end, a special bootloader known as <code>eliloader</code> is present in the
+control domain which reads various <code>other-config</code> keys in the VM record
+at start time and performs distribution-specific installation behavior.</p>
+<ul>
+<li>
+<p><code>install-repository</code> - Required. Path to a repository; 'http',
+    'https', 'ftp', or 'nfs'. Should be specified as would be used by
+    the target installer, but not including prefixes, for example,  method=.</p>
+</li>
+<li>
+<p><code>install-vnc</code> - Default: false. Use VNC where available during the
+    installation.</p>
+</li>
+<li>
+<p><code>install-vncpasswd</code> - Default: empty. The VNC password to use, when
+    providing one is possible using the command-line of the target
+    distribution.</p>
+</li>
+<li>
+<p><code>install-round</code> - Default: 1. The current bootloader round. Not to
+    be edited by the user.</p>
+</li>
+</ul>
+<h2 id="adding-xenstore-entries-to-vms">Adding xenstore entries to VMs</h2>
+<p>Developers may wish to install guest agents into VMs which take special
+action based on the type of the VM. In order to communicate this
+information into the guest, a special Xenstore name-space known as
+<code>vm-data</code> is available which is populated at VM creation time. It is
+populated from the <code>xenstore-data</code> map in the VM record.</p>
+<p>Set the <code>xenstore-data</code> parameter in the VM record:</p>
+<pre><code>xe vm-param-set uuid=vm_uuid xenstore-data:vm-data/foo=bar
+</code></pre>
+<p>Start the VM.</p>
+<p>If it is a Linux-based VM, install the Citrix VM Tools and use the <code>xenstore-read</code> to verify that the node exists in xenstore.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Only prefixes beginning with <code>vm-data</code> are permitted, and anything not
+in this name-space will be silently ignored when starting the VM.</p>
+</blockquote>
+<h2 id="security-enhancements">Security enhancements</h2>
+<p>The control domain in Citrix Hypervisor has
+various security enhancements in order to harden it against attack from
+malicious guests. Developers should never notice any loss of correct
+functionality as a result of these changes, but they are documented here
+as variations of behavior from other distributions.</p>
+<ul>
+<li>
+<p>The socket interface, <code>xenstored</code>, access using <code>libxenstore</code>. Interfaces are restricted by <code>xs_restrict()</code>.</p>
+</li>
+<li>
+<p>The device <code>/dev/xen/evtchn</code>, which is accessed by calling
+    <code>xs_evtchn_open()</code> in <code>libxenctrl</code>. A handle can be restricted using
+    <code>xs_evtchn_restrict()</code>.</p>
+</li>
+<li>
+<p>The device <code>/proc/xen/privcmd</code>, accessed through
+    <code>xs_interface_open()</code> in <code>libxenctrl</code>. A handle is restricted using
+    <code>xc_interface_restrict()</code>. Some privileged commands are naturally
+    hard to restrict (for example,  the ability to make arbitrary hypercalls),
+    and these are simply prohibited on restricted handles.</p>
+</li>
+<li>
+<p>A restricted handle cannot later be granted more privilege, and so
+    the interface must be closed and re-opened. Security is only gained
+    if the process cannot subsequently open more handles.</p>
+</li>
+</ul>
+<p>The control domain privileged user-space interfaces can now be
+restricted to only work for certain domains. There are three interfaces
+affected by this change:</p>
+<ul>
+<li>
+<p>The <code>qemu</code> device emulation processes and <code>vncterm</code> terminal emulation processes run as a non-root user ID
+    and are restricted into an empty directory. They uses the
+    restriction API above to drop privileges where possible.</p>
+</li>
+<li>
+<p>Access to xenstore is rate-limited to prevent malicious guests from
+    causing a denial of service on the control domain. This is
+    implemented as a token bucket with a restricted fill-rate, where
+    most operations take one token and opening a transaction takes 20.
+    The limits are set high enough that they should never be hit when
+    running even a large number of concurrent guests under loaded
+    operation.</p>
+</li>
+<li>
+<p>The VNC guest consoles are bound only to the <code>localhost</code> interface,
+    so that they are not exposed externally even if the control domain
+    packet filter is disabled by user intervention.</p>
+</li>
+</ul>
+<h2 id="advanced-settings-for-network-interfaces">Advanced settings for network interfaces</h2>
+<p>Virtual and physical network interfaces have some advanced settings that
+can be configured using the <code>other-config</code> map parameter. There is a set of custom ethtool settings and some miscellaneous settings.</p>
+<h3 id="ethtool-settings">ethtool settings</h3>
+<p>Developers might wish to configure custom ethtool settings for physical
+and virtual network interfaces. This is accomplished with
+<code>ethtool-&lt;option&gt;</code> keys in the <code>other-config</code> map parameter.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+<th>Valid settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ethtool-rx</td>
+<td>Specify if RX checksumming is enabled</td>
+<td><code>on</code> or <code>true</code> to enable the setting, <code>off</code> or <code>false</code> to disable it</td>
+</tr>
+<tr>
+<td>ethtool-tx</td>
+<td>Specify if TX checksumming is enabled</td>
+<td><code>on</code> or <code>true</code> to enable the setting, <code>off</code> or <code>false</code> to disable it</td>
+</tr>
+<tr>
+<td>ethtool-sg</td>
+<td>Specify if scatter-gather is enabled</td>
+<td><code>on</code> or <code>true</code> to enable the setting, <code>off</code> or <code>false</code> to disable it</td>
+</tr>
+<tr>
+<td>ethtool-tso</td>
+<td>Specify if tcp segmentation offload is enabled</td>
+<td><code>on</code> or <code>true</code> to enable the setting, <code>off</code> or <code>false</code> to disable it</td>
+</tr>
+<tr>
+<td>ethtool-ufo</td>
+<td>Specify if UDP fragmentation offload is enabled</td>
+<td><code>on</code> or <code>true</code> to enable the setting, <code>off</code> or <code>false</code> to disable it</td>
+</tr>
+<tr>
+<td>ethtool-gso</td>
+<td>Specify if generic segmentation offload is enabled</td>
+<td><code>on</code> or <code>true</code> to enable the setting, <code>off</code> or <code>false</code> to disable it</td>
+</tr>
+<tr>
+<td>ethtool-autoneg</td>
+<td>Specify if autonegotiation is enabled</td>
+<td><code>on</code> or <code>true</code> to enable the setting, <code>off</code> or <code>false</code> to disable it</td>
+</tr>
+<tr>
+<td>ethtool-speed</td>
+<td>Set the device speed in Mb/s</td>
+<td>10, 100, or 1000</td>
+</tr>
+<tr>
+<td>ethtool-duplex</td>
+<td>Set full or half duplex mode</td>
+<td>half or full</td>
+</tr>
+</tbody>
+</table>
+<p>For example, to enable TX checksumming on a virtual NIC using the xe
+CLI:</p>
+<pre><code>xe vif-param-set uuid=&lt;VIF UUID&gt; other-config:ethtool-tx="on"
+</code></pre>
+<p>or:</p>
+<pre><code>xe vif-param-set uuid=&lt;VIF UUID&gt; other-config:ethtool-tx="true"
+</code></pre>
+<p>To set the duplex setting on a physical NIC to half duplex using the xe
+CLI:</p>
+<pre><code>xe vif-param-set uuid=&lt;VIF UUID&gt; other-config:ethtool-duplex="half"
+</code></pre>
+<h3 id="miscellaneous-settings">Miscellaneous settings</h3>
+<p>You can also set a promiscuous mode on a VIF or PIF by setting the <code>promiscuous</code> key to <code>on</code>. For example, to enable promiscuous mode on a physical NIC using the xe CLI:</p>
+<pre><code>xe pif-param-set uuid=&lt;PIF UUID&gt; other-config:promiscuous="on"
+</code></pre>
+<p>or:</p>
+<pre><code>xe pif-param-set uuid=&lt;PIF UUID&gt; other-config:promiscuous="true"
+</code></pre>
+<p>The VIF and PIF objects have a <code>MTU</code> parameter that is read-only and
+provide the current setting of the maximum transmission unit for the
+interface. You can override the default maximum transmission unit of a
+physical or virtual NIC with the <code>mtu</code> key in the <code>other-config</code> map
+parameter. For example, to reset the MTU on a virtual NIC to use jumbo
+frames using the xe CLI:</p>
+<pre><code>xe vif-param-set uuid=&lt;VIF UUID&gt; other-config:mtu=9000
+</code></pre>
+<p>Note that changing the MTU of underlying interfaces is an advanced and
+experimental feature, and may lead to unexpected side-effects if you
+have varying MTUs across NICs in a single resource pool.</p>
+<h2 id="internationalization-for-sr-names">Internationalization for SR names</h2>
+<p>The SRs created at install time now have an <code>other_config</code> key
+indicating how their names may be internationalized.</p>
+<p><code>other_config["i18n-key"]</code> may be one of</p>
+<ul>
+<li>
+<p><code>local-hotplug-cd</code></p>
+</li>
+<li>
+<p><code>local-hotplug-disk</code></p>
+</li>
+<li>
+<p><code>local-storage</code></p>
+</li>
+<li>
+<p><code>Citrix Hypervisor-tools</code></p>
+</li>
+</ul>
+<p>Additionally, <code>other_config["i18n-original-value-&lt;field name&gt;"]</code> gives
+the value of that field when the SR was created. If XenCenter sees
+a record where <code>SR.name_label</code> equals <code>other_config["i18n-original-value-name_label"]</code> (that is, the record has not changed since it was created during
+Citrix Hypervisor installation), then internationalization will be applied.
+In other words, XenCenter will disregard the current contents of
+that field, and instead use a value appropriate to the user's own
+language.</p>
+<p>If you change <code>SR.name_label</code> for your own purpose, then it no longer is
+the same as <code>other_config["i18n-original-value-name_label"]</code>. Therefore,
+XenCenter does not apply internationalization, and instead
+preserves your given name.</p>
+<h2 id="hiding-objects-from-xencenter">Hiding objects from XenCenter</h2>
+<p>Networks, PIFs, and VMs can be hidden from XenCenter by adding the
+key <code>HideFromXenCenter=true</code> to the <code>other_config</code> parameter for the object. This capability
+is intended for ISVs who know what they are doing, not general use by
+everyday users. For example, you might want to hide certain VMs because
+they are cloned VMs that shouldn't be used directly by general users in
+your environment.</p>
+<p>In XenCenter, hidden Networks, PIFs, and VMs can be made visible,
+using the View menu.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../using-http/" title="Using HTTP" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Using HTTP
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../xc-api-extensions/" title="XenCenter API Extension" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                XenCenter API Extension
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

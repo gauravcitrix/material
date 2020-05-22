@@ -1,0 +1,20 @@
+site_name: ""
+nav:
+ - Introduction : 'index.md'
+ - Overview: 'overview.md'
+ - Getting Started : 'getting-started.md'
+ - Using : 'using.md'
+ - Using HTTP: 'using-http.md'
+ - Citrix Hypervisor Management API Extensions: 'xs-api-extensions.md'
+ - XenCenter API Extension : 'xc-api-extensions.md'
+theme:
+   name : 'material'
+   palette:
+     scheme: default
+     primary: black
+   logo : media/logo3.jpg
+extra_css:
+    - css/a.css
+     
+     
+  # prev_next_buttons_location: 'none'

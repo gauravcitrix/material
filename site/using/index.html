@@ -1,0 +1,1014 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+    
+    
+      
+        <title>Using - </title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.18ac144a.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.616af814.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/a.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#using-the-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="" class="md-header-nav__button md-logo" aria-label="">
+      
+  <img src="../media/logo3.jpg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Using
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="" class="md-nav__button md-logo" aria-label="">
+      
+  <img src="../media/logo3.jpg" alt="logo">
+
+    </a>
+    
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Using
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Using" class="md-nav__link md-nav__link--active">
+      Using
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anatomy-of-a-typical-application" class="md-nav__link">
+    Anatomy of a typical application
+  </a>
+  
+    <nav class="md-nav" aria-label="Anatomy of a typical application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-low-level-transport" class="md-nav__link">
+    Choosing a low-level transport
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing a low-level transport">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-pool-master-changes" class="md-nav__link">
+    Handling pool master changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-and-session-handling" class="md-nav__link">
+    Authentication and session handling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-references-to-useful-objects" class="md-nav__link">
+    Finding references to useful objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoking-synchronous-operations-on-objects" class="md-nav__link">
+    Invoking synchronous operations on objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-tasks-to-manage-asynchronous-operations" class="md-nav__link">
+    Using Tasks to manage asynchronous operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscribing-to-and-listening-for-events" class="md-nav__link">
+    Subscribing to and listening for events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-application-examples" class="md-nav__link">
+    Complete application examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Complete application examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simultaneously-migrating-vms-using-live-migration" class="md-nav__link">
+    Simultaneously migrating VMs using live migration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloning-a-vm-using-the-xe-cli" class="md-nav__link">
+    Cloning a VM using the xe CLI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../using-http/" title="Using HTTP" class="md-nav__link">
+      Using HTTP
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../xs-api-extensions/" title="Citrix Hypervisor Management API Extensions" class="md-nav__link">
+      Citrix Hypervisor Management API Extensions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../xc-api-extensions/" title="XenCenter API Extension" class="md-nav__link">
+      XenCenter API Extension
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anatomy-of-a-typical-application" class="md-nav__link">
+    Anatomy of a typical application
+  </a>
+  
+    <nav class="md-nav" aria-label="Anatomy of a typical application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-low-level-transport" class="md-nav__link">
+    Choosing a low-level transport
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing a low-level transport">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-pool-master-changes" class="md-nav__link">
+    Handling pool master changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-and-session-handling" class="md-nav__link">
+    Authentication and session handling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-references-to-useful-objects" class="md-nav__link">
+    Finding references to useful objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoking-synchronous-operations-on-objects" class="md-nav__link">
+    Invoking synchronous operations on objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-tasks-to-manage-asynchronous-operations" class="md-nav__link">
+    Using Tasks to manage asynchronous operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscribing-to-and-listening-for-events" class="md-nav__link">
+    Subscribing to and listening for events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-application-examples" class="md-nav__link">
+    Complete application examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Complete application examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simultaneously-migrating-vms-using-live-migration" class="md-nav__link">
+    Simultaneously migrating VMs using live migration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloning-a-vm-using-the-xe-cli" class="md-nav__link">
+    Cloning a VM using the xe CLI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="using-the-api">Using the API</h1>
+<p>This chapter describes how to use the Citrix Hypervisor Management API from
+real programs to manage Citrix Hypervisor servers and VMs. The chapter begins
+with a walk-through of a typical client application and demonstrates how
+the API can be used to perform common tasks. Example code fragments are
+given in python syntax but equivalent code in the other programming
+languages would look very similar. The chapter finishes with
+walk-throughs of two complete examples.</p>
+<h2 id="anatomy-of-a-typical-application">Anatomy of a typical application</h2>
+<p>This section describes the structure of a typical application using the
+Citrix Hypervisor Management API. Most client applications begin by
+connecting to a Citrix Hypervisor server and authenticating (for example,  with a
+username and password). Assuming the authentication succeeds, the server
+will create a "session" object and return a reference to the client.
+This reference will be passed as an argument to all future API calls.
+Once authenticated, the client may search for references to other useful
+objects (for example,  Citrix Hypervisor servers, VMs, etc.) and invoke operations on
+them. Operations may be invoked either synchronously or asynchronously;
+special task objects represent the state and progress of asynchronous
+operations. These application elements are all described in detail in
+the following sections.</p>
+<h3 id="choosing-a-low-level-transport">Choosing a low-level transport</h3>
+<p>API calls can be issued over two transports:</p>
+<ul>
+<li>
+<p>SSL-encrypted TCP on port 443 (https) over an IP network</p>
+</li>
+<li>
+<p>plaintext over a local Unix domain socket: <code>/var/xapi/xapi</code></p>
+</li>
+</ul>
+<p>Switching from the XML-RPC to the JSON-RPC backend can be done by adding the suffix <code>/jsonrpc</code> to the host URL path.</p>
+<p>The SSL-encrypted TCP transport is used for all off-host traffic while the Unix domain socket can be used from services running directly on the Citrix Hypervisor server itself. In the SSL-encrypted TCP transport, all API calls should be directed at the Resource Pool master; failure to do so will result in the error <code>HOST_IS_SLAVE</code>, which includes the IP address of the master as an error parameter.</p>
+<p>Because the master host of a pool can change, especially if HA is enabled on a pool, clients must implement the following steps to detect a master host change and connect to the new master as required:</p>
+<h4 id="handling-pool-master-changes">Handling pool master changes</h4>
+<ol>
+<li>
+<p>Subscribe to updates in the list of hosts servers, and maintain a current list of hosts in the pool</p>
+</li>
+<li>
+<p>If the connection to the pool master fails to respond, attempt to connect to all hosts in the list until one responds</p>
+</li>
+<li>
+<p>The first host to respond will return the <code>HOST_IS_SLAVE</code> error message, which contains the identity of the new pool master (unless of course the host is the new master)</p>
+</li>
+<li>
+<p>Connect to the new master</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>As a special-case, all messages sent through the Unix domain socket
+are transparently forwarded to the correct node.</p>
+</blockquote>
+<h3 id="authentication-and-session-handling">Authentication and session handling</h3>
+<p>The vast majority of API calls take a session reference as their first
+parameter; failure to supply a valid reference will result in a
+<code>SESSION_INVALID</code> error being returned. Acquire a session reference by
+supplying a username and password to the <code>login_with_password</code> function.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>As a special-case, if this call is executed over the local Unix domain
+socket then the username and password are ignored and the call always
+succeeds.</p>
+</blockquote>
+<p>Every session has an associated "last active" timestamp which is updated
+on every API call. The server software currently has a built-in limit of
+500 active sessions and will remove those with the oldest "last active"
+field if this limit is exceeded for a given <code>username</code> or <code>originator</code>.
+In addition all sessions whose "last active" field is older than 24
+hours are also removed. Therefore it is important to:</p>
+<ul>
+<li>
+<p>Specify an appropriate <code>originator</code> when logging in; and</p>
+</li>
+<li>
+<p>Remember to log out of active sessions to avoid leaking them; and</p>
+</li>
+<li>
+<p>Be prepared to log in again to the server if a <code>SESSION_INVALID</code>
+    error is caught.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong> A session reference obtained by a login request to the XML-RPC backend can be used in subsequent requests to the JSON-RPC backend, and vice-versa.</p>
+</blockquote>
+<p>In the following Python fragment a connection is established over the
+Unix domain socket and a session is created:</p>
+<pre><code class="python">    import XenAPI
+
+    session = XenAPI.xapi_local()
+    try:
+      session.xenapi.login_with_password(&quot;root&quot;, &quot;&quot;, &quot;2.3&quot;, &quot;My Widget v0.1&quot;)
+      ...
+    finally:
+      session.xenapi.session.logout()
+</code></pre>
+
+<h3 id="finding-references-to-useful-objects">Finding references to useful objects</h3>
+<p>Once an application has authenticated the next step is to acquire
+references to objects in order to query their state or invoke operations
+on them. All objects have a set of "implicit" messages which include the
+following:</p>
+<ul>
+<li>
+<p><code>get_by_name_label</code> : return a list of all objects of a particular
+    class with a particular label;</p>
+</li>
+<li>
+<p><code>get_by_uuid</code> : return a single object named by its UUID;</p>
+</li>
+<li>
+<p><code>get_all</code> : return a set of references to all objects of a
+    particular class; and</p>
+</li>
+<li>
+<p><code>get_all_records</code> : return a map of reference to records for each
+    object of a particular class.</p>
+</li>
+</ul>
+<p>For example, to list all hosts:</p>
+<pre><code class="python">    hosts = session.xenapi.host.get_all()
+</code></pre>
+
+<p>To find all VMs with the name "my first VM":</p>
+<pre><code class="python">    vms = session.xenapi.VM.get_by_name_label('my first VM')
+</code></pre>
+
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Object <code>name_label</code> fields are not guaranteed to be unique and so the
+<code>get_by_name_label</code> API call returns a set of references rather than a
+single reference.</p>
+</blockquote>
+<p>In addition to the methods of finding objects described above, most
+objects also contain references to other objects within fields. For
+example it is possible to find the set of VMs running on a particular
+host by calling:</p>
+<pre><code class="python">    vms = session.xenapi.host.get_resident_VMs(host)
+</code></pre>
+
+<h3 id="invoking-synchronous-operations-on-objects">Invoking synchronous operations on objects</h3>
+<p>Once object references have been acquired, operations may be invoked on
+them. For example to start a VM:</p>
+<pre><code class="python">    session.xenapi.VM.start(vm, False, False)
+</code></pre>
+
+<p>All API calls are by default synchronous and will not return until the
+operation has completed or failed. For example in the case of <code>VM.start</code>
+the call does not return until the VM has started booting.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>When the <code>VM.start</code> call returns the VM will be booting. To determine
+when the booting has finished, wait for the in-guest agent to report
+internal statistics through the <code>VM_guest_metrics</code> object.</p>
+</blockquote>
+<h3 id="using-tasks-to-manage-asynchronous-operations">Using Tasks to manage asynchronous operations</h3>
+<p>To simplify managing operations which take quite a long time (for example,
+<code>VM.clone</code> and <code>VM.copy</code>) functions are available in two forms:
+synchronous (the default) and asynchronous. Each asynchronous function
+returns a reference to a task object which contains information about
+the in-progress operation including:</p>
+<ul>
+<li>
+<p>whether it is pending</p>
+</li>
+<li>
+<p>whether it is has succeeded or failed</p>
+</li>
+<li>
+<p>progress (in the range 0-1)</p>
+</li>
+<li>
+<p>the result or error code returned by the operation</p>
+</li>
+</ul>
+<p>An application which wanted to track the progress of a <code>VM.clone</code>
+operation and display a progress bar would have code like the following:</p>
+<pre><code class="python">    vm = session.xenapi.VM.get_by_name_label('my vm')
+    task = session.xenapi.Async.VM.clone(vm)
+    while session.xenapi.task.get_status(task) == &quot;pending&quot;:
+      progress = session.xenapi.task.get_progress(task)
+      update_progress_bar(progress)
+      time.sleep(1)
+    session.xenapi.task.destroy(task)
+</code></pre>
+
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Note that a well-behaved client should remember to delete tasks
+created by asynchronous operations when it has finished reading the
+result or error. If the number of tasks exceeds a built-in threshold
+then the server will delete the oldest of the completed tasks.</p>
+</blockquote>
+<h3 id="subscribing-to-and-listening-for-events">Subscribing to and listening for events</h3>
+<p>With the exception of the task and metrics classes, whenever an object
+is modified the server generates an event. Clients can subscribe to this
+event stream on a per-class basis and receive updates rather than
+resorting to frequent polling. Events come in three types:</p>
+<ul>
+<li>
+<p><code>add</code> - generated when an object has been created;</p>
+</li>
+<li>
+<p><code>del</code> - generated immediately before an object is destroyed; and</p>
+</li>
+<li>
+<p><code>mod</code> - generated when an object's field has changed.</p>
+</li>
+</ul>
+<p>Events also contain a monotonically increasing ID, the name of the class
+of object and a snapshot of the object state equivalent to the result of
+a <code>get_record()</code>.</p>
+<p>Clients register for events by calling <code>event.register()</code> with a list of
+class names or the special string "*". Clients receive events by
+executing <code>event.next()</code> which blocks until events are available and
+returns the new events.</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>Since the queue of generated events on the server is of finite length
+a very slow client might fail to read the events fast enough; if this
+happens an <code>EVENTS_LOST</code> error is returned. Clients should be prepared
+to handle this by re-registering for events and checking that the
+condition they are waiting for hasn't become true while they were
+unregistered.</p>
+</blockquote>
+<p>The following Python code fragment demonstrates how to print a summary
+of every event generated by a system: (similar code exists in <code>CitrixHypervisor-SDK/XenServerPython/samples/watch-all-events.py</code>)</p>
+<pre><code class="python">    fmt = &quot;%8s %20s %5s %s&quot;
+    session.xenapi.event.register([&quot;*&quot;])
+      while True:
+        try:
+          for event in session.xenapi.event.next():
+            name = &quot;(unknown)&quot;
+            if &quot;snapshot&quot; in event.keys():
+              snapshot = event[&quot;snapshot&quot;]
+              if &quot;name_label&quot; in snapshot.keys():
+                name = snapshot[&quot;name_label&quot;]
+            print fmt % (event['id'], event['class'], event['operation'], name)
+        except XenAPI.Failure, e:
+          if e.details == [ &quot;EVENTS_LOST&quot; ]:
+            print &quot;Caught EVENTS_LOST; should reregister&quot;
+</code></pre>
+
+<h2 id="complete-application-examples">Complete application examples</h2>
+<p>This section describes two complete examples of real programs using the API.</p>
+<h3 id="simultaneously-migrating-vms-using-live-migration">Simultaneously migrating VMs using live migration</h3>
+<p>This python example (contained in <code>CitrixHypervisor-SDK/XenServerPython/samples/permute.py</code>)
+demonstrates how to use live migration to move VMs simultaneously between
+hosts in a Resource Pool. The example makes use of asynchronous API
+calls and shows how to wait for a set of tasks to complete.</p>
+<p>The program begins with some standard boilerplate and imports the API module</p>
+<pre><code class="python">    import sys, time
+    import XenAPI
+</code></pre>
+
+<p>Next the commandline arguments containing a server URL, username,
+password and a number of iterations are parsed. The username and
+password are used to establish a session which is passed to the function
+<code>main</code>, which is called multiple times in a loop. Note the use of
+<code>try: finally:</code> to make sure the program logs out of its session at the
+end.</p>
+<pre><code class="python">    if __name__ == &quot;__main__&quot;:
+        if len(sys.argv) &lt;&gt; 5:
+            print &quot;Usage:&quot;
+            print sys.argv[0], &quot; &lt;url&gt; &lt;username&gt; &lt;password&gt; &lt;iterations&gt;&quot;
+            sys.exit(1)
+        url = sys.argv[1]
+        username = sys.argv[2]
+        password = sys.argv[3]
+        iterations = int(sys.argv[4])
+        # First acquire a valid session by logging in:
+        session = XenAPI.Session(url)
+        session.xenapi.login_with_password(username, password, &quot;2.3&quot;,
+                                           &quot;Example migration-demo v0.1&quot;)
+        try:
+            for i in range(iterations):
+                main(session, i)
+        finally:
+            session.xenapi.session.logout()
+</code></pre>
+
+<p>The <code>main</code> function examines each running VM in the system, taking care
+to filter out <em>control domains</em> (which are part of the system and not
+controllable by the user). A list of running VMs and their current hosts
+is constructed.</p>
+<pre><code class="python">    def main(session, iteration):
+        # Find a non-template VM object
+        all = session.xenapi.VM.get_all()
+        vms = []
+        hosts = []
+        for vm in all:
+            record = session.xenapi.VM.get_record(vm)
+            if not(record[&quot;is_a_template&quot;]) and \
+               not(record[&quot;is_control_domain&quot;]) and \
+               record[&quot;power_state&quot;] == &quot;Running&quot;:
+                vms.append(vm)
+                hosts.append(record[&quot;resident_on&quot;])
+        print &quot;%d: Found %d suitable running VMs&quot; % (iteration, len(vms))
+</code></pre>
+
+<p>Next the list of hosts is rotated:</p>
+<pre><code class="python">    # use a rotation as a permutation
+        hosts = [hosts[-1]] + hosts[:(len(hosts)-1)]
+</code></pre>
+
+<p>Each VM is then moved using live migration to the new host under this
+rotation (i.e. a VM running on host at position 2 in the list will be
+moved to the host at position 1 in the list etc.) In order to execute
+each of the movements in parallel, the asynchronous version of the
+<code>VM.pool_migrate</code> is used and a list of task references constructed.
+Note the <code>live</code> flag passed to the <code>VM.pool_migrate</code>; this causes the VMs to be moved while they
+are still running.</p>
+<pre><code>tasks = []
+    for i in range(0, len(vms)):
+        vm = vms[i]
+        host = hosts[i]
+        task = session.xenapi.Async.VM.pool_migrate(vm, host, { "live": "true" })
+        tasks.append(task)
+</code></pre>
+<p>The list of tasks is then polled for completion:</p>
+<pre><code>finished = False
+    records = {}
+    while not(finished):
+        finished = True
+        for task in tasks:
+            record = session.xenapi.task.get_record(task)
+            records[task] = record
+            if record["status"] == "pending":
+                finished = False
+        time.sleep(1)
+</code></pre>
+<p>Once all tasks have left the <em>pending</em> state (i.e. they have
+successfully completed, failed or been cancelled) the tasks are polled
+once more to see if they all succeeded:</p>
+<pre><code>allok = True
+    for task in tasks:
+        record = records[task]
+        if record["status"] &lt;&gt; "success":
+            allok = False
+</code></pre>
+<p>If any one of the tasks failed then details are printed, an exception is
+raised and the task objects left around for further inspection. If all
+tasks succeeded then the task objects are destroyed and the function
+returns.</p>
+<pre><code>if not(allok):
+        print "One of the tasks didn't succeed at", \
+            time.strftime("%F:%HT%M:%SZ", time.gmtime())
+        idx = 0
+        for task in tasks:
+            record = records[task]
+            vm_name = session.xenapi.VM.get_name_label(vms[idx])
+            host_name = session.xenapi.host.get_name_label(hosts[idx])
+            print "%s : %12s %s -&gt; %s [ status: %s; result = %s; error = %s ]" % \
+                  (record["uuid"], record["name_label"], vm_name, host_name,      \
+                   record["status"], record["result"], repr(record["error_info"]))
+            idx = idx + 1
+        raise "Task failed"
+    else:
+        for task in tasks:
+            session.xenapi.task.destroy(task)
+</code></pre>
+<h3 id="cloning-a-vm-using-the-xe-cli">Cloning a VM using the xe CLI</h3>
+<p>This example is a <code>bash</code> script which uses the xe CLI to clone a VM
+taking care to shut it down first if it is powered on.</p>
+<p>The example begins with some boilerplate which first checks if the
+environment variable <code>XE</code> has been set: if it has it assumes that it
+points to the full path of the CLI, else it is assumed that the xe CLI
+is on the current path. Next the script prompts the user for a server
+name, username and password:</p>
+<pre><code># Allow the path to the 'xe' binary to be overridden by the XE environment variable
+if [ -z "${XE}" ]; then
+  XE=xe
+fi
+
+if [ ! -e "${HOME}/.xe" ]; then
+  read -p "Server name: " SERVER
+  read -p "Username: " USERNAME
+  read -p "Password: " PASSWORD
+  XE="${XE} -s ${SERVER} -u ${USERNAME} -pw ${PASSWORD}"
+fi
+</code></pre>
+<p>Next the script checks its commandline arguments. It requires exactly
+one: the UUID of the VM which is to be cloned:</p>
+<pre><code># Check if there's a VM by the uuid specified
+${XE} vm-list params=uuid | grep -q " ${vmuuid}$"
+if [ $? -ne 0 ]; then
+        echo "error: no vm uuid \"${vmuuid}\" found"
+        exit 2
+fi
+</code></pre>
+<p>The script then checks the power state of the VM and if it is running,
+it attempts a clean shutdown. The event system is used to wait for the
+VM to enter state "Halted".</p>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>The xe CLI supports a command-line argument <code>--minimal</code> which causes
+it to print its output without excess whitespace or formatting, ideal
+for use from scripts. If multiple values are returned they are
+comma-separated.</p>
+</blockquote>
+<pre><code># Check the power state of the vm
+name=$(${XE} vm-list uuid=${vmuuid} params=name-label --minimal)
+state=$(${XE} vm-list uuid=${vmuuid} params=power-state --minimal)
+wasrunning=0
+
+# If the VM state is running, we shutdown the vm first
+if [ "${state}" = "running" ]; then
+        ${XE} vm-shutdown uuid=${vmuuid}
+        ${XE} event-wait class=vm power-state=halted uuid=${vmuuid}
+        wasrunning=1
+fi
+</code></pre>
+<p>The VM is then cloned and the new VM has its <code>name_label</code> set to
+<code>cloned_vm</code>.</p>
+<pre><code># Clone the VM
+newuuid=$(${XE} vm-clone uuid=${vmuuid} new-name-label=cloned_vm)
+</code></pre>
+<p>Finally, if the original VM had been running and was shutdown, both it
+and the new VM are started.</p>
+<pre><code># If the VM state was running before cloning, we start it again
+# along with the new VM.
+if [ "$wasrunning" -eq 1 ]; then
+        ${XE} vm-start uuid=${vmuuid}
+        ${XE} vm-start uuid=${newuuid}
+fi
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../getting-started/" title="Getting Started" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Started
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../using-http/" title="Using HTTP" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Using HTTP
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
